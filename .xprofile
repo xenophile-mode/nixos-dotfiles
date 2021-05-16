@@ -1,0 +1,11 @@
+#!/bin/bash
+
+feh --bg-center ~/papes/Wallpaper3.jpg
+flashfocus &
+bash layout1.sh
+pulseeffects --gapplication-service &
+xrdb -merge .Xresources
+xterm -b 30 &
+picom &
+qutebrowser &
+xmobar &

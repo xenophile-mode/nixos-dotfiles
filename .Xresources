@@ -1,0 +1,33 @@
+XTerm*selectToClipboard: true
+XTerm*faceName:    Dina-Medium:pixelsize=13
+XTerm.vt100.translations: #override \n\
+  Ctrl <Key> minus: smaller-vt-font() \n\
+  Ctrl <Key> plus: larger-vt-font() \n\
+  Ctrl <Key> 0: set-vt-font(d) \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  Shift <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY) \n\
+  <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+  <Btn2Up>: insert-selection(PRIMARY)
+XTerm*background:  #666666
+XTerm*foreground:  #000000
+XTerm*color0:      #666666
+XTerm*color1:      #000000
+XTerm*color2:      #999999
+XTerm*color3:      #999999
+XTerm*color4:      #000000
+XTerm*color5:      #000000
+XTerm*color6:      #000000
+XTerm*color7:      #000000
+XTerm*color8:      #000000
+XTerm*color9:      #000000
+XTerm*color10:     #000000
+XTerm*color11:     #000000
+XTerm*color12:     #000000
+XTerm*color13:     #000000
+XTerm*color14:     #000000
+XTerm*color15:     #000000
+XTerm*metaSendsEscape: true
+XTerm*fullscreen: never
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+XTerm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
