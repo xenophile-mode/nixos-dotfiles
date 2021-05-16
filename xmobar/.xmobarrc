@@ -1,3 +1,4 @@
+#Grayscale1 colorscheme
 Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
        , bgColor = "#000000"
        , fgColor = "#666666"

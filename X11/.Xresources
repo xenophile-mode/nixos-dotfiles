@@ -1,3 +1,4 @@
+#Grayscale1 colorscheme
 XTerm*selectToClipboard: true
 XTerm*faceName:    Dina-Medium:pixelsize=13
 XTerm.vt100.translations: #override \n\
