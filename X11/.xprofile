@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/bin/ksh
 
-feh --bg-center ~/papes/Wallpaper3.jpg
+feh --bg-tile 7d848b.png
+#feh --bg-center ~/papes/Wallpaper3.jpg
 flashfocus &
 bash layout1.sh
 pulseeffects --gapplication-service &
 xrdb -merge .Xresources
-xterm -b 30 &
+xterm &
 picom &
-qutebrowser &
-xmobar &
+#qutebrowser &

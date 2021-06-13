@@ -1,13 +1,12 @@
-#Grayscale1 colorscheme
-Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
-       , bgColor = "#000000"
-       , fgColor = "#666666"
-       , position = Top
+Config { font = "xft:Iosevka-14"
+       , bgColor = "#E1E4E1"
+       , fgColor = "#000000"
+       , position = Static { xpos = 1566 , ypos = 15, width = 1475, height = 45 }
        , lowerOnStart = True
        , commands = [ Run Weather "KSGF" ["-t","<station>: <tempF>F","-L","18","-H","25","--normal","#666666","--high","#666666","--low","#666666"] 36000
                     , Run Network "eth0" ["-L","0","-H","32","--normal","green","--high","red"] 10
                     , Run Network "eth1" ["-L","0","-H","32","--normal","green","--high","red"] 10
-                    , Run Cpu ["-L","3","-H","50","--normal","#666666","--high","#666666"] 10
+                    , Run Cpu ["-L","3","-H","50","--normal","#AD1D1D","--high","#AD1D1D"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
                     , Run Swap [] 10
                     , Run Com "uname" ["-s","-r"] "" 36000
@@ -15,5 +14,5 @@ Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "}%cpu% | %memory% | %uname% | <fc=#666666>%date%</fc>{"
+       , template = "}%cpu% | %memory% | %uname% | <fc=#AD1D1D>%date%</fc>{"
        }
